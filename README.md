@@ -6,9 +6,6 @@
 Tema do trabalho: Uma estrutura para o Museu
 Este projeto é fruto de uma colaboração no trabalho acadêmico de um amigo. Após algumas semanas de planejamento e prototipagem no Figma, estamos prontos para transformar nossas ideias em realidade, desenvolvendo tanto o front-end quanto o back-end da aplicação.
 
-
-<img align="right" alt="PXN-ImgPrototipoMuseu" src=".">
-
 <h3> Funcionalidades </h3>
 Interface Intuitiva: Design moderno e fácil de usar, baseado no protótipo criado no Figma.
 Backend Robusto: Estrutura sólida para garantir a eficiência e segurança dos dados.
@@ -26,6 +23,10 @@ Responsividade: Totalmente adaptável a diferentes dispositivos e tamanhos de te
 <li> Lucas Moreira
   
 <h2>Licença</h2>
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
 
-~pxn-k3321 sempre no topo 🚀
+> Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
+
+~ pxn-k3321 sempre no topo 🚀
+
+
+<img align="right" alt="PXN-ImgPrototipoMuseu" src="/ImgMuseu.png">
