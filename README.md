@@ -3,7 +3,11 @@
 
 
 <h3>Descrição</h3>
+Tema do trabalho: Uma estrutura para o Museu
 Este projeto é fruto de uma colaboração no trabalho acadêmico de um amigo. Após algumas semanas de planejamento e prototipagem no Figma, estamos prontos para transformar nossas ideias em realidade, desenvolvendo tanto o front-end quanto o back-end da aplicação.
+
+
+<img align="right" alt="PXN-ImgPrototipoMuseu" src=".">
 
 <h3> Funcionalidades </h3>
 Interface Intuitiva: Design moderno e fácil de usar, baseado no protótipo criado no Figma.
