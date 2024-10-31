@@ -29,4 +29,4 @@ Responsividade: Totalmente adaptável a diferentes dispositivos e tamanhos de te
 ~ pxn-k3321 sempre no topo 🚀
 
 
-<img align="right" alt="PXN-ImgPrototipoMuseu" src="/ImgMuseu.png">
+<img align="right" alt="PXN-ImgPrototipoMuseu" src="/ImgMuseu02.png">
