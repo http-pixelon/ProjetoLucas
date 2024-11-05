@@ -1,0 +1,1065 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.body_obras {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #1d1d1d;
+}
+
+
+/*Notbooks*/
+@media (max-width: 1399.98px) {}
+
+/*Tablets*/
+@media (max-width: 1199.98px) {}
+
+/*Celulaares e alguns Tablets*/
+@media (max-width: 991.98px) {}
+
+
+/*Celulares Menores*/
+@media (max-width: 767.98px) {
+
+    header {
+        margin-top: -10px;
+    }
+
+    .ExploraTec {
+        margin-bottom: -15px;
+    }
+
+    .ExploraTec_Logo {
+
+        transform: scale(0.70);
+        margin-left: -35px;
+    }
+
+    .LucasRandom {
+        margin-bottom: -35px;
+        font-size: 13px;
+        position: relative;
+        left: -13px;
+
+    }
+
+    nav {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    header nav a:hover {
+        color: #ffc107;
+    }
+
+    .museum-section {
+        background: url('/Image/marte.jpg') no-repeat center center/cover;
+        padding: 50px 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .funcao_modoDark {
+        left: 185px;
+        top: -31px;
+        font-size: 17px;
+        position: relative;
+        display: inline-block;
+        width: 3.5em;
+        height: 2em;
+    }
+
+    .funcao_modoDark input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        transform: scale(0.60);
+    }
+
+    .animacao_tema {
+        --background: #1e0e3f;
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--background);
+        transition: .5s;
+        border-radius: 30px;
+        transform: scale(0.60);
+    }
+
+    .animacao_tema:before {
+        position: absolute;
+        content: "";
+        height: 1.4em;
+        width: 1.4em;
+        border-radius: 50%;
+        left: 10%;
+        bottom: 15%;
+        box-shadow: inset 8px -4px 0px 0px #fff000;
+        background: var(--background);
+        transition: .5s;
+    }
+
+    input:checked+.animacao_tema {
+        background-color: #522ba7;
+    }
+
+    input:checked+.animacao_tema:before {
+        transform: translateX(100%);
+        box-shadow: inset 15px -4px 0px 15px #fff000;
+    }
+
+}
+
+.nossas_obras {
+    color:#323232fb;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+    margin-left: -895px;
+}
+
+.Selecao_Button {
+    background-color: #dd314b;
+    padding: 5px 15px;
+    border-radius: 13px;
+    margin-top: -5px;
+}
+
+
+/*  MODO PRETO  */
+
+
+img.modo_preto {
+    filter: invert(100%);
+}
+
+.Fundo-Marte {
+    margin-bottom: -5px;
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #702329;
+}
+
+.ExploraTec {
+    flex: 1;
+    text-align: left;
+}
+
+nav {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #dd314b;
+    background-color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 13px;
+    margin-top: -5px;
+}
+
+.ExploraTec_Logo {
+    top: 0px;
+    height: 39px;
+    margin-bottom: 1px;
+    margin-top: 23px;
+}
+
+.LucasRandom {
+    margin-right: 30px;
+    margin-top: 25px;
+}
+
+/*Fundo e Questionario*/
+
+.mars-section {
+    padding: 0px 0px;
+    margin-bottom: -50px;
+    text-align: center;
+    position: relative;
+}
+
+
+.Fundo-Marte {
+    height: 49 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+.botao_quest {
+    display: inline-block;
+    color: white; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.form-container input {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-container .Botao_Formulario {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4bee71;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    cursor: pointer;
+}
+
+.Botao_Formulario:hover {
+    background-color: #dd314b;
+    box-shadow: 0 0 10px 3px rgba(231, 10, 98, 0.384);
+}
+
+.Botao_Lucas {
+    display: inline-block;
+    font-size: 12px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: #dd314b;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: -40px;
+}
+
+.Botao_Lucas:hover {
+    background-color: #ff003c;
+}
+
+
+.sessao_obras {
+    background-color: #e4dcdccc;
+    color: #282828;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.carrossel_obras_museu {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+}
+
+.obras_museu {
+    display: inline-block;
+    width: 390px;
+    height: 320px;
+    margin: 15px;
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 8px rgba(21, 21, 21, 0.2);
+}
+
+.obras_museu:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgb(21, 21, 21);
+}
+
+.obras_museu h3 {
+    font-size: 17px;
+    margin-top: 240px;
+    color: #ffffff;
+    text-shadow: 0 0px 15px rgb(21, 21, 21);
+}
+
+.obras_museu button {
+    font-size: 12px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: #4a4a4a5d;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: -40px;
+}
+
+.obras_museu button:hover {
+    background-color: #ff003c;
+}
+
+/*Butao*/
+
+.obras_museu01 {
+    display: inline-block;
+    margin: 15px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 30px rgb(21, 21, 21);
+}
+
+.obras_museu01:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 10px rgb(21, 21, 21);
+}
+
+.obras_museu01 h3 {
+    margin-top: -50px;
+    font-size: 17px;
+    color: #ffffff;
+    text-shadow: 0 0px 15px rgb(21, 21, 21);
+}
+
+.museu_ingressos {
+    background: url('/Image/FrenteMuseu/FrenteMuseu (2).jpg') no-repeat center center/cover;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0);
+}
+
+.aviso_ingresso {
+    color: #ffffff;
+    padding: 15px 10px 10px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.aviso_ingresso h1 {
+    margin-bottom: 20px;
+    font-size: 25px
+}
+
+.aviso_ingresso p {
+    margin-bottom: 15px;
+    font-size: 23px;
+    color: #d6d6d6;
+}
+
+.Botao_Ingresso {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff2f4e;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.Botao_Ingresso img {
+    margin-right: 5px;
+    margin-top: -5px;
+}
+
+.aviso_ingresso .Botao_Ingresso:hover {
+    background-color: #ef1f3e;
+    box-shadow: 0 0 10px 3px rgba(231, 10, 98, 0.692);
+}
+
+
+footer {
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    background-color: #702329;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links img {
+    filter: invert(100%);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.05);
+}
+
+.footer-divider {
+    margin: 20px 0;
+    border-top: 1px solid #702329;
+}
+
+
+@media (max-width: 768px) {
+    .obra-item {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+
+
+
+/*FAQ PERGUNTA E REPOSTAS*/
+
+.sessao_faq {
+    background: url('/Image/FrenteMuseu/FrenteMuseu\ \(2\).jpg') no-repeat center center/cover;
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.faq-informacoes {
+    background-color: rgba(36, 34, 34, 0.966);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.445);
+    text-align: left;
+}
+
+.faq {
+    font-size: 35px;
+    margin-top: 0;
+    color: #f3f3f3;
+    text-align: left;
+}
+
+.sessao_faq .pergunta_01 {
+    color: #ff6d6d;
+}
+
+.sessao_faq .pergunta_02 {
+    color: #ff6d6d;
+}
+
+.sessao_faq .pergunta_03 {
+    color: #ff6d6d;
+}
+
+.sessao_faq p {
+    color: #ddd;
+}
+
+.coluna_pergunta_01,
+.coluna_pergunta_02,
+.coluna_pergunta_03 {
+    margin-bottom: 20px;
+}
+
+.pergunta_01,
+.pergunta_02,
+.pergunta_03 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.resposta-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.linha-vermelha {
+    width: 5px;
+    height: 100%;
+    background-color: red;
+    margin-right: 10px;
+}
+
+.resposta_01,
+.resposta_02,
+.resposta_03 {
+    font-size: 1em;
+    margin: 10px 0;
+    text-align: left;
+}
+
+
+/* Estilos para a galeria */
+
+.titulo_galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+    font-size: 90px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000;
+}
+
+.titulo_galeria {
+    font-size: 30px;
+}
+
+.galeria_top {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagens_museu {
+    box-shadow: 0 5px 30px rgb(21, 21, 21);
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    overflow: hidden;
+    border-radius: 20px;
+    
+}
+
+.imagens_museu img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.imagens_museu:hover img {
+    transform: scale(1.1);
+}
+
+
+
+/* CSS para a galeria */
+
+.obras_titulo {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.445);
+    box-shadow: 0 5px 30px rgb(21, 21, 21);
+}
+
+.obras_titulo p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/Image/Marte/Marte\ 10.jpg);
+    width: 100%;
+    height: 200px;
+    margin-top: -50px;
+    margin-bottom: 100px;
+}
+
+.galleryObras {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imageObras {
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    overflow: hidden;
+}
+
+.imageObras img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+
+}
+
+.imageObras:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    .imageObras {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    .imageObras {
+        width: 100%;
+    }
+}
+
+
+
+/* Estilos para cada card individual 
+.card {
+    height: 390px; 
+    background-color: #ffffff;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card img {
+    margin-top: -40px;
+    width: 100%;
+    height: 350px;
+    object-fit: cover; 
+}
+
+/* Estilos para as informações do card */
+.info {
+    padding: 15px;
+    text-align: center;
+}
+
+.platform {
+    font-size: 0.9rem;
+    color: rgb(161, 119, 119);
+    margin-bottom: 5px;
+    display: block;
+    top: 200px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0070f3;
+}
+
+
+
+
+
+/* BOTAO FUNCÃO MODO DARK EM BAIXO */
+
+.funcao_modoDark {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+
+.funcao_modoDark input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    transform: scale(0.9);
+}
+
+/* animação do tema dark aqui*/
+
+.animacao_tema {
+    --background: #232323;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .5s;
+    border-radius: 30px;
+    transform: scale(0.9);
+}
+
+.animacao_tema:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #dd314b;
+    background: var(--background);
+    transition: .5s;
+}
+
+input:checked+.animacao_tema {
+    background-color: #383838;
+}
+
+input:checked+.animacao_tema:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #f03652;
+}
+
+/* PAGINA SOBRE */
+
+.sobre_nos {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sobre_nos .galeria_top {
+    margin-bottom: 30px;
+}
+
+.titulo_e_descricao {
+    background-color: #ebebeb;
+    padding: 40px;
+    border-radius: 20px;
+    color: #303030;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.titulo_e_descricao p {
+    max-width: 1100px; 
+    padding-right: 20px; 
+    padding-left: 20px;
+    border-left: 5px solid #333; 
+    text-align: justify; 
+}
+
+.localizacao_museu {
+    color: #303030;
+    padding: 40px;
+}
+
+.icon-localizacao {
+    width: 24px; 
+    height: auto; 
+    vertical-align: middle; 
+    margin-right: 8px; 
+}
+
+.sobre_nos h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #303030;
+}
+
+.sobre_nos p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #353535;
+}
+
+.sobre_nos .galeria_top .images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sobre_nos .galeria_top .images img {
+    width: 0%;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Imagem_MapaMuseu {
+    border-radius: 30px;
+    width: 450px;
+    height: auto;
+    margin-left: 650px;
+    margin-top: -230px;
+}
+
+
+/* QUESTIONARIO DO LUCAS */
+
+/* Container para o fundo estrelado */
+.star-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -2;
+}
+
+/* Gerando estrelas com pseudo-elementos */
+.star-background::before,
+.star-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(2px 2px at 10px 10px, white, transparent) 0 0,
+        radial-gradient(2px 2px at 30px 30px, white, transparent) 0 0,
+        radial-gradient(2px 2px at 50px 70px, white, transparent) 0 0,
+        radial-gradient(2px 2px at 90px 90px, white, transparent) 0 0,
+        radial-gradient(2px 2px at 120px 50px, white, transparent) 0 0,
+        radial-gradient(2px 2px at 200px 150px, white, transparent) 0 0,
+        radial-gradient(2px 2px at 250px 200px, white, transparent) 0 0;
+    background-size: 200px 200px;
+    /* Tamanho do padrão de estrelas */
+    animation: twinkling 3s infinite ease-in-out alternate;
+    /* Animação de brilho */
+    opacity: 0.6;
+}
+
+/* Estrelas adicionais em outro plano para efeito de profundidade */
+.star-background::after {
+    background-size: 300px 300px;
+    opacity: 0.4;
+}
+
+/* Animação para o brilho das estrelas */
+@keyframes twinkling {
+
+    0%,
+    100% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}
+
+.user-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #FFD700;
+}
+
+.container {
+    background-color: rgba(168, 41, 41, 0.214);
+    /*eu vou ver se consigo arrumar o header*/
+    border-radius: 35px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+.container h2 {
+
+    font-size: 36px;
+    margin-bottom: 10px;
+
+}
+
+.container h3 {
+    color: #d5d5d5;
+    font-weight: lighter;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    background-color: rgba(168, 41, 41, 0.6);
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.form-group table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-group th,
+.form-group td {
+    padding: 10px;
+    text-align: center;
+}
+
+.form-group th {
+    color: #ffcc66;
+    font-weight: normal;
+}
+
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    resize: none;
+    height: 100px;
+}
+
+.Botao_Questionario {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    background-color: rgb(20, 197, 50);
+    color: #000;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 580px;
+}
+
+.Botao_Questionario:hover {
+    background-color: rgb(45, 111, 255);
+}
+
+.img_lucas {
+    width: 100%;
+    border-radius: 4px;
+    border-bottom: 6px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 8px rgba(21, 21, 21, 0.2);
+}
+
+.img_lucas:hover {
+    transform: scale(1);
+    box-shadow: 0 5px 10px rgb(21, 21, 21);
+}
+
+.galeria {
+    margin-bottom: 90px;
+    column-count: 3;
+    column-gap: 6px;
+}
+
+/* Sessao Obras aqui */ 
+
+.Sessao_Obra {
+    display: flex;
+    max-width: 900px;
+    gap: 20px;
+    text-align: center;
+    margin: 50px auto 60px; 
+    border-radius: 20px; 
+    background-color: #171717d1;
+    padding: 50px; 
+}
+
+.imagem_obra img { 
+    width: 350px;
+    height: 500px; 
+    margin-top: 30px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.detalhes_obra {
+    max-width: 500px;
+    color: #ffffff;
+}
+
+.detalhes_obra h1 {
+    font-size: 28px; 
+    font-weight: bold;
+}
+
+.detalhes_obra h2 {
+    font-size: 24px; 
+    color: #adadad;
+}
+
+.descricao_obra,
+.descriptionEsquerda {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    color: #ebebeb;
+}
+
+.descriptionEsquerda {
+    transform: translateX(-10px); 
+}
+
+
+
