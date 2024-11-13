@@ -14,13 +14,20 @@ Responsividade: Totalmente adaptável a diferentes dispositivos e tamanhos de te
 <li> Front-end: HTML, CSS e JavaScript
 <li> Back-end: C++, Express, mySQL
 
-<h3>Prototipagem:</h3>
+<h3>Prototipagem/Design UX & UI:</h3>
 <li> Kauã Frigieri
 <li> Lucas Moreira
 
 <h3>Front-End:</h3>
 <li> Kauã Frigieri
 <li> Lucas Moreira
+
+<h3>Back-End:</h3>
+<li> Kauã Frigieri
+<li>
+
+<h3>Banco de Dados:</h3>
+<li>
   
 <h2>Licença</h2>
 
