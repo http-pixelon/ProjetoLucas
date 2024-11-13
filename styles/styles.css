@@ -4,13 +4,88 @@ body {
     color: white;
 }
 
-.body_obras {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-    background-color: #1d1d1d;
+
+ /* Modo Escuro - K3321 */
+
+
+header.modoEscuro_PxN { 
+     background-color: #444444; 
+}
+ 
+footer.modoEscuro_PxN { 
+    background-color: #1e1e1e; 
+    color: #d5d5d5; 
+}  
+
+
+.site-header.modoEscuro_PxN { 
+    background-color: #333333; 
+    color: #d5d5d5; 
 }
 
+.sessao_obras.modoEscuro_PxN {
+    background-color: #3f3f3f; 
+}
+
+.nossas_obras.modoEscuro_PxN {
+    color: #ffffff;
+}
+
+.body_obras.modoEscuro_PxN {
+    background-color: #636363; 
+    color: #fff;
+}
+
+.body_sobree.modoEscuro_PxN {
+    background-color: #1f1f1f; 
+    color: #fff;
+}
+
+.faq-informacoes.modoEscuro_PxN {
+    background-color: #1f1f1f; 
+}
+
+
+
+.horario_museu.modoEscuro_PxN { 
+    color: #d5d5d5; 
+}
+.funcionamento_museu.modoEscuro_PxN { 
+    color: #d5d5d5; 
+}
+.endereco_museu.modoEscuro_PxN { 
+    color: #d5d5d5; 
+}
+.titulo_museu.modoEscuro_PxN { 
+    color: #d5d5d5; 
+}
+.localizacao_museu.modoEscuro_PxN { 
+    color: #d5d5d5; 
+}
+.escrita_museu.modoEscuro_PxN { 
+    color: #d5d5d5; 
+}
+
+
+
+
+@media only screen and (max-width: 599px) {
+    .carrossel_obras_museu {
+        flex-direction: column;
+    }
+
+    .obras_museu div {
+        width: 50px;
+    }
+}
+
+@media (min-width: 599px) {
+
+    .obras_museu img {
+        width: 900px;
+        height: 900px;
+    }
+}
 
 /*Notbooks*/
 @media (max-width: 1399.98px) {}
@@ -23,127 +98,394 @@ body {
 
 
 /*Celulares Menores*/
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px) {}
 
-    header {
-        margin-top: -10px;
-    }
 
-    .ExploraTec {
-        margin-bottom: -15px;
-    }
+/*NEW Header*/
 
-    .ExploraTec_Logo {
+.site-header {
+    background-color: #702329;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
-        transform: scale(0.70);
-        margin-left: -35px;
-    }
-
-    .LucasRandom {
-        margin-bottom: -35px;
-        font-size: 13px;
-        position: relative;
-        left: -13px;
-
-    }
-
-    nav {
-        flex: 2;
-        display: flex;
-        justify-content: center;
-    }
-
-    nav a {
-        color: #fff;
-        margin: 0 15px;
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-
-    header nav a:hover {
-        color: #ffc107;
-    }
-
-    .museum-section {
-        background: url('/Image/marte.jpg') no-repeat center center/cover;
-        padding: 50px 20px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 90vh;
-        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-
-    .funcao_modoDark {
-        left: 185px;
-        top: -31px;
-        font-size: 17px;
-        position: relative;
-        display: inline-block;
-        width: 3.5em;
-        height: 2em;
-    }
-
-    .funcao_modoDark input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-        transform: scale(0.60);
-    }
-
-    .animacao_tema {
-        --background: #1e0e3f;
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: var(--background);
-        transition: .5s;
-        border-radius: 30px;
-        transform: scale(0.60);
-    }
-
-    .animacao_tema:before {
-        position: absolute;
-        content: "";
-        height: 1.4em;
-        width: 1.4em;
-        border-radius: 50%;
-        left: 10%;
-        bottom: 15%;
-        box-shadow: inset 8px -4px 0px 0px #fff000;
-        background: var(--background);
-        transition: .5s;
-    }
-
-    input:checked+.animacao_tema {
-        background-color: #522ba7;
-    }
-
-    input:checked+.animacao_tema:before {
-        transform: translateX(100%);
-        box-shadow: inset 15px -4px 0px 15px #fff000;
-    }
+.site-header ul {
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
 
 }
 
-.nossas_obras {
-    color:#323232fb;
-    font-size: 20px;
+.navigation-menu li a {
+    display: block;
+    font-size: 15px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 30px;
-    margin-left: -895px;
+    padding: 0.7em 0.5em;
+    text-decoration: none;
+    border-radius: 8px;
+    border-bottom: 1px #f7f7f7 solid;
+    color: #fff;
+    margin: 7px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navigation-menu li a:hover,
+.site-header .mobile-menu-icon:hover {
+    background-color: #dd314b;
+    color: #ffffff;
 }
 
 .Selecao_Button {
     background-color: #dd314b;
     padding: 5px 15px;
-    border-radius: 13px;
     margin-top: -5px;
+}
+
+.site-logo img {
+    width: 22%;
+    height: auto;
+    transform: translateY(0px);
+}
+
+.navigation-menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+
+}
+
+.mobile-menu-icon {
+
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 15px 10px;
+    position: relative;
+    user-select: none;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-top: 2px;
+    margin-right: 25px;
+}
+
+.hamburger-icon {
+    background: #333;
+    display: block;
+    height: 1.6px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 15px;
+}
+
+.hamburger-icon:before,
+.hamburger-icon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamburger-icon:before {
+    top: 5px;
+}
+
+.hamburger-icon:after {
+    top: -5px;
+}
+
+.mobile-menu-checkbox {
+    display: none;
+}
+
+.mobile-menu-checkbox:checked~.navigation-menu {
+    max-height: 240px;
+}
+
+.mobile-menu-checkbox:checked~.mobile-menu-icon .hamburger-icon {
+    background: transparent;
+}
+
+.mobile-menu-checkbox:checked~.mobile-menu-icon .hamburger-icon:before {
+    transform: rotate(-45deg);
+}
+
+.mobile-menu-checkbox:checked~.mobile-menu-icon .hamburger-icon:after {
+    transform: rotate(45deg);
+}
+
+.mobile-menu-checkbox:checked~.mobile-menu-icon:not(.steps) .hamburger-icon:before,
+.mobile-menu-checkbox:checked~.mobile-menu-icon:not(.steps) .hamburger-icon:after {
+    top: 0;
+}
+
+.header-container {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.header-content {
+    width: 92%;
+    margin: 0 4%;
+
+}
+
+@media (min-width: 768px) {
+    .navigation-menu li {
+        float: left;
+    }
+
+    .navigation-menu li a {
+        padding: 15px 30px;
+        margin-top: 10px;
+        border-radius: 6px;
+    }
+
+    .navigation-menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .mobile-menu-icon {
+        display: none;
+    }
+
+    .navigation-menu li a {
+        transition: .3s;
+        border-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        background-color: #702329;
+        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .site-header ul {
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        margin-bottom: -20px;
+    }
+
+    .navigation-menu li a {
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 0.3em 0.5em;
+        text-decoration: none;
+        border-bottom: 1px #f7f7f7 solid;
+        color: #fff;
+        margin: 7px 10px;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .navigation-menu li a:hover,
+    .site-header .mobile-menu-icon:hover {
+        background-color: #dd314b;
+        color: #ffffff;
+        border-radius: 13px;
+    }
+
+
+    .site-logo {
+        display: block;
+        float: left;
+    }
+
+    .site-logo img {
+        width: 50%;
+        height: auto;
+        margin-bottom: -58px;
+    }
+
+    .navigation-menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .site-logo img {
+        width: 60%;
+        height: auto;
+        margin-left: -15px;
+        margin-bottom: -40px;
+    }
+}
+
+
+/**/
+
+header {
+    margin-top: -10px;
+}
+
+.ExploraTec {
+    margin-bottom: -15px;
+}
+
+.ExploraTec_Logo {
+
+    transform: scale(0.70);
+    margin-left: -35px;
+}
+
+.LucasRandom {
+    margin-bottom: -35px;
+    font-size: 13px;
+    position: relative;
+    left: -13px;
+
+}
+
+nav {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffc107;
+}
+
+::-webkit-scrollbar {
+    background-color: #cacaca;
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 35px;
+    background-color: #373737a1;
+
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: #444;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c02a4d;
+    border-radius: 20px;
+    width: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #c02a4d;
+
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #c02a4d;
+}
+
+
+::-webkit-scrollbar-corner {
+    background-color: #373737a1;
+}
+
+.museum-section {
+    background: url('/Image/marte.jpg') no-repeat center center/cover;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.funcao_modoDark {
+    left: 185px;
+    top: -31px;
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+.funcao_modoDark input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    transform: scale(0.60);
+}
+
+.animacao_tema {
+    --background: #1e0e3f;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .5s;
+    border-radius: 30px;
+    transform: scale(0.60);
+}
+
+.animacao_tema:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #fff000;
+    background: var(--background);
+    transition: .5s;
+}
+
+input:checked+.animacao_tema {
+    background-color: #522ba7;
+}
+
+input:checked+.animacao_tema:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #fff000;
+}
+
+.nossas_obras { 
+    color: #323232fb;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+}
+
+
+@media (max-width: 768px) {
+
+    .nossas_obras {
+        color: #323232fb;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 }
 
 
@@ -227,7 +569,7 @@ header nav a:hover {
 
 .botao_quest {
     display: inline-block;
-    color: white; 
+    color: white;
     text-decoration: none;
     font-weight: bold;
     font-size: 15px;
@@ -268,6 +610,57 @@ header nav a:hover {
     box-shadow: 0 0 10px 3px rgba(231, 10, 98, 0.384);
 }
 
+@media (max-width: 768px) {
+
+    .form-container {
+        color: #000;
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.2);
+        padding: 20px 50px;
+        border-radius: 10px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    .form-container input {
+        margin: 3px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .form-container h2 {
+        margin-top: -5px;
+        margin-bottom: -5px;
+        font-size: 20px;
+    }
+
+    .form-container p {
+        font-size: 14px;
+    }
+
+    .form-container .Botao_Formulario {
+        padding: 10px 63px;
+        margin-top: 3px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4bee71;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .Botao_Formulario:hover {
+        background-color: #dd314b;
+        box-shadow: 0 0 10px 3px rgba(231, 10, 98, 0.384);
+    }
+
+}
+
 .Botao_Lucas {
     display: inline-block;
     font-size: 12px;
@@ -286,6 +679,7 @@ header nav a:hover {
 .Botao_Lucas:hover {
     background-color: #ff003c;
 }
+
 
 
 .sessao_obras {
@@ -347,6 +741,73 @@ header nav a:hover {
     background-color: #ff003c;
 }
 
+@media (max-width: 768px) {
+
+    .sessao_obras {
+        background-color: #e4dcdccc;
+        color: #282828;
+        padding: 50px 20px;
+        text-align: center;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+        position: relative;
+    }
+
+    .carrossel_obras_museu {
+        margin-top: 25px;
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .obras_museu {
+        display: inline-block;
+        transform: scale(0.9);
+        width: 100%;
+        height: 250px;
+        margin-left: -2px;
+        margin-top: -10px;
+        background-color: #333;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 5px 8px rgba(21, 21, 21, 0.2);
+    }
+
+    .obras_museu:hover {
+        transform: scale(0.90);
+        box-shadow: 0 5px 10px rgb(21, 21, 21);
+    }
+
+    .obras_museu h3 {
+        font-size: 17px;
+        margin-top: 185px;
+        color: #ffffff;
+        text-shadow: 0 0px 15px rgb(21, 21, 21);
+    }
+
+    .obras_museu button {
+        font-size: 12px;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 7px;
+        background-color: #4a4a4a5d;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-top: -40px;
+    }
+
+    .obras_museu button:hover {
+        background-color: #ff003c;
+    }
+
+
+}
+
 /*Butao*/
 
 .obras_museu01 {
@@ -370,6 +831,51 @@ header nav a:hover {
     color: #ffffff;
     text-shadow: 0 0px 15px rgb(21, 21, 21);
 }
+
+@media (max-width: 768px) {
+
+    .obras_titulo p {
+        font-size: 31px;
+    }
+
+    .sessao_galeria {
+        padding: 5px;
+    }
+
+    .galeria {
+        margin-top: -30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 15px;
+    }
+
+    .obras_museu01 {
+        text-align: center;
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: #232323;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .obras_museu01 img {
+        width: 110%;
+        height: 180px;
+    }
+
+    .obras_museu01:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .obras_museu01 h3 {
+        margin-top: 5px;
+        font-size: 12px;
+        color: #ffffff;
+    }
+
+}
+
+/*Museu Ingresso*/
 
 .museu_ingressos {
     background: url('/Image/FrenteMuseu/FrenteMuseu (2).jpg') no-repeat center center/cover;
@@ -423,6 +929,62 @@ header nav a:hover {
     box-shadow: 0 0 10px 3px rgba(231, 10, 98, 0.692);
 }
 
+@media (max-width: 768px) {
+
+    .museu_ingressos {
+        background: url('/Image/FrenteMuseu/FrenteMuseu (2).jpg') no-repeat center center/cover;
+        padding: 50px 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, 0);
+    }
+
+    .aviso_ingresso {
+        color: #ffffff;
+        padding: 15px 10px 10px;
+        border-radius: 15px;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .aviso_ingresso h1 {
+        margin-bottom: -3px;
+        font-size: 21px
+    }
+
+    .aviso_ingresso p {
+        margin-bottom: 15px;
+        font-size: 15px;
+        color: #d6d6d6;
+    }
+
+    .Botao_Ingresso {
+        padding: 10px 9px;
+        border: none;
+        border-radius: 5px;
+        background-color: #ff2f4e;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    .Botao_Ingresso img {
+        margin-right: 5px;
+        margin-top: -5px;
+    }
+
+    .aviso_ingresso .Botao_Ingresso:hover {
+        background-color: #ef1f3e;
+        box-shadow: 0 0 30px 0.1px rgba(231, 10, 98, 0.347);
+    }
+
+
+}
 
 footer {
     padding: 40px 0;
@@ -443,12 +1005,15 @@ footer p {
     margin: 0;
 }
 
-.-links {
-    display: flex;
-    gap: 15px;
+.footer-content .social-links {
+    margin-left: 700px;
+    margin-top: 10px;
 }
 
 .social-links img {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
     filter: invert(100%);
     color: #fff;
     text-decoration: none;
@@ -467,9 +1032,47 @@ footer p {
 
 
 @media (max-width: 768px) {
-    .obra-item {
-        flex: 1 1 100%;
+
+    footer {
+        font-size: 10px;
+        padding: 20px 0;
         text-align: center;
+        color: #fff;
+        font-family: 'Arial', sans-serif;
+        background-color: #702329;
+    }
+
+    footer .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    .footer-content .social-links {
+        margin-left: 92px;
+        margin-top: 10px;
+    }
+
+    .social-links img {
+        filter: invert(100%);
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .social-links img:hover {
+        transform: scale(1.05);
+    }
+
+    .footer-divider {
+        margin: 20px 0;
+        border-top: 1px solid #702329;
     }
 }
 
@@ -553,54 +1156,86 @@ footer p {
 }
 
 
-/* Estilos para a galeria */
 
-.titulo_galeria {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 200px;
-    margin-top: -50px;
-    margin-bottom: -50px;
-    font-size: 90px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #000;
+@media (max-width: 768px) {
+
+    .sessao_faq {
+        background: url('/Image/FrenteMuseu/FrenteMuseu\ \(2\).jpg') no-repeat center center/cover;
+        padding: 20px 15px;
+        text-align: left;
+    }
+
+    .faq-informacoes {
+        padding: 25px;
+        border-radius: 10px;
+        width: 88%;
+        margin-left: -10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.445);
+        text-align: left;
+    }
+
+    .faq {
+        font-size: 30px;
+        margin-top: 0;
+        color: #f3f3f3;
+        text-align: center;
+    }
+
+    .sessao_faq .pergunta_01 {
+        color: #ff6d6d;
+        font-size: 15px;
+    }
+
+    .sessao_faq .pergunta_02 {
+        color: #ff6d6d;
+        font-size: 15px;
+    }
+
+    .sessao_faq .pergunta_03 {
+        color: #ff6d6d;
+        font-size: 15px;
+    }
+
+    .sessao_faq p {
+        color: #ddd;
+    }
+
+    .coluna_pergunta_01,
+    .coluna_pergunta_02,
+    .coluna_pergunta_03 {
+        margin-bottom: 20px;
+    }
+
+    .pergunta_01,
+    .pergunta_02,
+    .pergunta_03 {
+        font-size: 10px;
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .resposta-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .linha-vermelha {
+        width: 5px;
+        height: 100%;
+        background-color: red;
+        margin-right: 10px;
+    }
+
+    .resposta_01,
+    .resposta_02,
+    .resposta_03 {
+        font-size: 12px;
+        margin: 0px 0;
+        text-align: left;
+    }
+
 }
-
-.titulo_galeria {
-    font-size: 30px;
-}
-
-.galeria_top {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.imagens_museu {
-    box-shadow: 0 5px 30px rgb(21, 21, 21);
-    margin: 10px;
-    width: calc(33.33% - 20px);
-    overflow: hidden;
-    border-radius: 20px;
-    
-}
-
-.imagens_museu img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.5s;
-}
-
-.imagens_museu:hover img {
-    transform: scale(1.1);
-}
-
 
 
 /* CSS para a galeria */
@@ -799,11 +1434,11 @@ input:checked+.animacao_tema:before {
 }
 
 .titulo_e_descricao p {
-    max-width: 1100px; 
-    padding-right: 20px; 
+    max-width: 1100px;
+    padding-right: 20px;
     padding-left: 20px;
-    border-left: 5px solid #333; 
-    text-align: justify; 
+    border-left: 5px solid #333;
+    text-align: justify;
 }
 
 .localizacao_museu {
@@ -812,10 +1447,10 @@ input:checked+.animacao_tema:before {
 }
 
 .icon-localizacao {
-    width: 24px; 
-    height: auto; 
-    vertical-align: middle; 
-    margin-right: 8px; 
+    width: 24px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
 .sobre_nos h1 {
@@ -843,12 +1478,165 @@ input:checked+.animacao_tema:before {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.imagem_mapa {
+    display: flex;
+    justify-content: end;
+}
+
 .Imagem_MapaMuseu {
-    border-radius: 30px;
-    width: 450px;
+    border-radius: 15px;
+    width: 350px;
+    margin-right: 200px;
+    margin-top: -200px;
+}
+
+.titulo_galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+    font-size: 90px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000;
+}
+
+.titulo_galeria {
+    font-size: 30px;
+}
+
+.galeria_top {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagens_museu {
+    box-shadow: 0 5px 30px rgb(21, 21, 21);
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+
+}
+
+.imagens_museu img {
+    width: 100%;
     height: auto;
-    margin-left: 650px;
-    margin-top: -230px;
+    transition: transform 0.5s;
+}
+
+.imagens_museu:hover img {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+
+    .imagens_museu {
+        box-shadow: 0 5px 30px rgb(21, 21, 21);
+        overflow: hidden;
+    
+    }
+    
+    .imagens_museu img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s;
+    }
+    
+    .imagens_museu:hover img {
+        transform: scale(1.1);
+    }
+
+    .sobre_nos {
+        margin-top: 30px;
+        padding: 20px 8px;
+        max-width: 1200px;
+
+    }
+
+    .sobre_nos .galeria_top {
+        margin-bottom: 30px;
+    }
+
+    .titulo_e_descricao {
+        background-color: #ffffff;
+        padding: 1px 30px;
+        border-radius: 20px;
+        color: #303030;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .titulo_e_descricao p {
+        max-width: 1100px;
+        padding-right: 0px;
+        padding-left: 10px;
+        margin-left: -20px;
+        border-left: 4px solid #333;
+        text-align: justify;
+    }
+
+    .localizacao_museu {
+
+        color: #303030;
+        padding: 40px;
+    }
+
+    .icon-localizacao {
+        width: 24px;
+        height: auto;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+
+    .sobre_nos h1 {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: -10px;
+        color: #303030;
+    }
+
+    .sobre_nos p {
+        font-size: 12px;
+        line-height: 1.6;
+        color: #353535;
+    }
+
+    .sobre_nos .galeria_top .images {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .sobre_nos .galeria_top .images img {
+        width: 0%;
+        margin: 10px 0;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .Imagem_MapaMuseu {
+        border-radius: 15px;
+        width: 230px;
+        margin-top: 10px;
+        margin-right: -17px;
+    }
+
+    .localizacao_museu img {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 
@@ -909,14 +1697,35 @@ input:checked+.animacao_tema:before {
     }
 }
 
+/*QUESTIONARIO AQUI MANÉ*/
+
+/*
+
 .user-box {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     border-radius: 20px;
     color: #FFD700;
+    margin-top: -100px;
+    margin-left: 310px;
+    font-size: 12px;
+    top: 50px;
 }
 
-.container {
+@media (max-width: 768px) {
+
+    .user-box {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px 10px;
+        border-radius: 20px;
+        margin-top: 10px;
+        font-size: 12px;
+        color: #FFD700;
+    }
+}
+*/
+
+.Questionario {
     background-color: rgba(168, 41, 41, 0.214);
     /*eu vou ver se consigo arrumar o header*/
     border-radius: 35px;
@@ -928,21 +1737,21 @@ input:checked+.animacao_tema:before {
     margin-bottom: 50px;
 }
 
-.container h2 {
+.Questionario h2 {
 
     font-size: 36px;
     margin-bottom: 10px;
 
 }
 
-.container h3 {
+.Questionario h3 {
     color: #d5d5d5;
     font-weight: lighter;
     margin-top: -10px;
     margin-bottom: 30px;
 }
 
-.form-group {
+.grupos_questionario {
     background-color: rgba(168, 41, 41, 0.6);
     padding: 10px 40px;
     border-radius: 10px;
@@ -950,18 +1759,18 @@ input:checked+.animacao_tema:before {
 
 }
 
-.form-group table {
+.grupos_questionario table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.form-group th,
-.form-group td {
+.grupos_questionario th,
+.grupos_questionario td {
     padding: 10px;
     text-align: center;
 }
 
-.form-group th {
+.grupos_questionario th {
     color: #ffcc66;
     font-weight: normal;
 }
@@ -993,6 +1802,89 @@ textarea {
     background-color: rgb(45, 111, 255);
 }
 
+@media (max-width: 768px) {
+
+    .Questionario {
+        background-color: rgba(168, 41, 41, 0.348);
+        /*eu vou ver se consigo arrumar o header*/
+        border-radius: 35px;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 10px 8px;
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 50px;
+    }
+
+    .Questionario h2 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .Questionario h3 {
+        font-size: 14px;
+        color: #d5d5d5;
+        font-weight: lighter;
+        margin-top: -10px;
+        margin-bottom: 30px;
+    }
+
+    .grupos_questionario {
+        background-color: rgba(168, 41, 41, 0.389);
+        padding: 10px 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+    }
+
+    .grupos_questionario table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .grupos_questionario th,
+    .grupos_questionario td {
+        font-size: 11px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .grupos_questionario th {
+        font-size: 10px;
+        padding: 5px;
+        color: #ffcc66;
+        font-weight: normal;
+    }
+
+    textarea {
+        width: 95%;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border: none;
+        resize: none;
+        height: 100px;
+        font-size: 13px;
+    }
+
+    .Botao_Questionario {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        background-color: rgb(82, 240, 109);
+        color: #ffffff;
+        border: none;
+        padding: 5px 30px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .Botao_Questionario:hover {
+        background-color: rgb(45, 111, 255);
+    }
+}
+
 .img_lucas {
     width: 100%;
     border-radius: 4px;
@@ -1012,22 +1904,22 @@ textarea {
     column-gap: 6px;
 }
 
-/* Sessao Obras aqui */ 
+/* Sessao Obras aqui */
 
 .Sessao_Obra {
     display: flex;
     max-width: 900px;
     gap: 20px;
     text-align: center;
-    margin: 50px auto 60px; 
-    border-radius: 20px; 
-    background-color: #171717d1;
-    padding: 50px; 
+    margin: 50px auto 60px;
+    border-radius: 20px;
+    background-color: #333333d1;
+    padding: 50px;
 }
 
-.imagem_obra img { 
+.imagem_obra img {
     width: 350px;
-    height: 500px; 
+    height: 500px;
     margin-top: 30px;
     margin-right: 20px;
     border-radius: 8px;
@@ -1039,12 +1931,12 @@ textarea {
 }
 
 .detalhes_obra h1 {
-    font-size: 28px; 
+    font-size: 28px;
     font-weight: bold;
 }
 
 .detalhes_obra h2 {
-    font-size: 24px; 
+    font-size: 24px;
     color: #adadad;
 }
 
@@ -1058,8 +1950,160 @@ textarea {
 }
 
 .descriptionEsquerda {
-    transform: translateX(-10px); 
+    transform: translateX(-10px);
 }
 
 
 
+@media (max-width: 768px) {
+
+    .Sessao_Obra {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 290px;
+        height: 1050px;
+    }
+
+    .imagem_obra img {
+        width: 290px;
+        height: 250px;
+        margin-left: 20px;
+        margin-top: -21px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .descricao_obra {
+        padding: 20px;
+        margin-top: 15px;
+        font-size: 13px;
+        line-height: 1.6;
+        text-align: left;
+        color: #ebebeb;
+    }
+
+    .descriptionEsquerda {
+        padding: 20px;
+        margin-top: -30px;
+        margin-left: 10px;
+        font-size: 13px;
+        line-height: 1.6;
+        text-align: left;
+        color: #ebebeb;
+    }
+
+    .descriptionEsquerda {
+        
+        transform: translateX(-10px);
+    }
+
+    .fonte_obras {
+        font-size: 8px;
+    }
+
+    .detalhes_obra h1 {
+        margin-top: -160px;
+        padding: 25px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .detalhes_obra h2 {
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: -5px;
+        padding: 25px;
+        color: #adadad;
+    }
+
+    .data_obra {
+        margin-top: -5px;
+        font-size: 10px;
+
+    }
+}
+
+/*
+@media (min-width:499px) {
+
+    .Sessao_Obra {
+        max-width: 400px;
+        gap: 20px;
+        text-align: center;
+        margin: 50px auto 60px; 
+        border-radius: 20px; 
+        padding: 50px; 
+
+    }
+
+}
+
+@media (min-width: 399px) {
+    .imagem_obra img {
+        position: relative;
+        width: 50%;
+        height: auto;
+    }
+     }*/
+
+     /*BOTAO TEMA DARK*/
+
+.modo_escuro {
+    left: -30px;
+    --color: #ffffff;
+    --size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--size);
+    user-select: none;
+    fill: var(--color);
+  }
+  
+  .modo_escuro .moon {
+    position: absolute;
+    animation: keyframes-fill .5s;
+  }
+  
+  .modo_escuro .sun {
+    position: absolute;
+    display: none;
+    animation: keyframes-fill .5s;
+  }
+  
+  .modo_escuro input:checked ~ .moon {
+    display: none;
+  }
+  
+  .modo_escuro input:checked ~ .sun {
+    display: block;
+  }
+  
+  .modo_escuro input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  @keyframes keyframes-fill {
+    0% {
+      transform: rotate(-360deg) scale(0);
+      opacity: 0;
+    }
+  
+    75% {
+      transform: rotate(25deg);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .modo_escuro {
+        position: relative;
+        left: -3px;
+        bottom: -10px;
+    }
+}
