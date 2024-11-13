@@ -1,5 +1,37 @@
+/*Sistema Modo Escuro 90% otimizado*/
 
-/* Declarações dos temas */
+document.addEventListener("DOMContentLoaded", function() {
+    const temaEscuro = document.getElementById("sistema_modoEscuro");
+
+    temaEscuro.addEventListener("click", function() {
+        document.body.classList.toggle("modoEscuro");
+        document.querySelector("header").classList.toggle("modoEscuro_PxN");
+        document.querySelector("footer").classList.toggle("modoEscuro_PxN");
+        
+        const elementos = [
+            ".body_obras",
+            ".body_sobree",
+            ".sobre_nos",
+            ".sessao_obras",
+            ".nossas_obras",
+            ".faq-informacoes",
+            ".horario_museu",
+            ".funcionamento_museu",
+            ".endereco_museu",
+            ".titulo_museu",
+            ".escrita_museu"
+        ];
+
+        elementos.forEach(selector => {
+            const elemento = document.querySelector(selector);
+            if (elemento) {
+                elemento.classList.toggle("modoEscuro_PxN");
+            }
+        });
+    });
+});
+
+/* Declarações dos temas 
 function LucasFuncao() {
     var element = document.body;
     var footer = document.querySelector('footer'); 
@@ -17,13 +49,6 @@ function LucasFuncao() {
     if (footer) { 
         footer.classList.toggle("modo_preto02");
     }
-
-    /* Gambiarra das gambiarras | Tema black */
-    
-    /*if (sessao_obras) { 
-        sessao_obras.classList.toggle("modo_preto");
-    }
-     */
 
     if (header) { 
         header.classList.toggle("modo_preto");
@@ -49,4 +74,13 @@ function LucasFuncao() {
         titulo_e_descricao.classList.toggle("modo_preto05");
     }
 }
+
+*/
+
+/* Gambiarra das gambiarras | Tema black */
+    
+    /*if (sessao_obras) { 
+        sessao_obras.classList.toggle("modo_preto");
+    }
+     */
 
